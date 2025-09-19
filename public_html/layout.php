@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Nonprofit Public Benefit Computer Program (Software Development, Computer Programming) Charity Corporation based in Rancho Cordova, Sacramento County, California, United States of America, owned by Daniel Ohm">
     <meta name="robots" content="all">
-    <title>$_SERVER['Title'] - c0mpu73rpr09r4m.charity</title>
+    <title><?= $title ? $title . ' - ' : '' ?>c0mpu73rpr09r4m.charity</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/jquery-ui.min.css" />
     <link rel="stylesheet" href="/css/site.css" />
@@ -32,7 +32,9 @@
         </div>
     <?php } ?>
     <div class="header">
-        <img src="/images/logo.png" alt="C0MPU73R PR09R4M CHARITY" class="header-image redirect" data-url="~/Home" />
+        <a href="/" class="text-decoration-none">
+            <img src="/images/logo.png" alt="C0MPU73R PR09R4M CHARITY" class="header-image redirect" />
+        </a>
         <div class="header-text">C0MPU73R PR09R4M CHARITY</div>
     </div>
     <hr />
