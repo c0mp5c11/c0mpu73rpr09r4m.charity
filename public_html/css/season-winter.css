@@ -1,5 +1,7 @@
 ﻿body {
-    font-family: 'Henny Penny', cursive;
-    font-weight: 900;
     background-color: rgb(222, 139, 97);
+}
+
+.theme::after {
+    content: 'Winter';
 }

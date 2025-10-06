@@ -3,3 +3,7 @@
     font-weight: 900;
     background-color: rgb(255, 95, 31);
 }
+
+.theme::after {
+    content: 'Autumn';
+}

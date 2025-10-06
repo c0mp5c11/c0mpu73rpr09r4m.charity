@@ -17,7 +17,7 @@
     <?= (new DateTime() >= new DateTime('December 21') && new DateTime() <= new DateTime('March 20')) ? '<link rel="stylesheet" href="/css/season-winter.css" />' : ''; ?>
     <?= (new DateTime() >= new DateTime('March 21') && new DateTime() <= new DateTime('June 21')) ? '<link rel="stylesheet" href="/css/season-spring.css" />' : ''; ?>
     <?= (new DateTime() >= new DateTime('June 21') && new DateTime() <= new DateTime('September 22')) ? '<link rel="stylesheet" href="/css/season-summmer.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('September 22') && new DateTime() <= new DateTime('December 21')) ? '<link rel="stylesheet" href="/css/season-fall.css" />' : ''; ?>
+    <?= (new DateTime() >= new DateTime('September 22') && new DateTime() <= new DateTime('December 21')) ? '<link rel="stylesheet" href="/css/season-autumn.css" />' : ''; ?>
 </head>
 <body>
     <?php if (!empty($_SERVER['SUCCESS_MESSAGE'])) { ?>
@@ -49,7 +49,9 @@
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; <?= date('Y') ?> - C0MPU73R PR09R4M CHARITY
+        <div class="row">
+            <div class="col"> &copy; <?= date('Y') ?> - C0MPU73R PR09R4M CHARITY</div>
+            <div class="col d-flex flex-column justify-content-end theme text-end"></div>
         </div>
     </footer>
     <script type="text/javascript" src="~/jquery.min.js"></script>
