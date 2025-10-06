@@ -7,6 +7,9 @@ ob_start();
 <h3 class="bolder">Certified Project Management</h3>
 <h3 class="bolder">Certified Software Security</h3>
 <hr />
+<div>
+<img class="mb-3" src="/images/feature_graphic.png">
+</div>
 <a class='btn btn-primary btn-lg m-1 redirect' href='/request/index.php'>Request</a>
 <a class='btn btn-primary btn-lg m-1 redirect' href='/software/index.php'>Software</a>
 <a class='btn btn-primary btn-lg m-1 redirect' href='/donate/index.php'>Donate</a>

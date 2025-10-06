@@ -14,10 +14,10 @@
             <?= $_SERVER['SUCCESS_MESSAGE'] ?>
         </div>
     <?php } ?>
-    <?= (new DateTime() >= new DateTime('December 21') && new DateTime() <= new DateTime('March 20')) ? '<link rel="stylesheet" href="~/css/season-winter.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('March 21') && new DateTime() <= new DateTime('June 21')) ? '<link rel="stylesheet" href="~/css/season-spring.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('June 21') && new DateTime() <= new DateTime('September 22')) ? '<link rel="stylesheet" href="~/css/season-summmer.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('September 22') && new DateTime() <= new DateTime('December 21')) ? '<link rel="stylesheet" href="~/css/season-fall.css" />' : ''; ?>
+    <?= (new DateTime() >= new DateTime('December 21') && new DateTime() <= new DateTime('March 20')) ? '<link rel="stylesheet" href="/css/season-winter.css" />' : ''; ?>
+    <?= (new DateTime() >= new DateTime('March 21') && new DateTime() <= new DateTime('June 21')) ? '<link rel="stylesheet" href="/css/season-spring.css" />' : ''; ?>
+    <?= (new DateTime() >= new DateTime('June 21') && new DateTime() <= new DateTime('September 22')) ? '<link rel="stylesheet" href="/css/season-summmer.css" />' : ''; ?>
+    <?= (new DateTime() >= new DateTime('September 22') && new DateTime() <= new DateTime('December 21')) ? '<link rel="stylesheet" href="/css/season-fall.css" />' : ''; ?>
 </head>
 <body>
     <?php if (!empty($_SERVER['SUCCESS_MESSAGE'])) { ?>
@@ -31,11 +31,15 @@
             <?= $_SERVER['ERROR_MESSAGE'] ?>
         </div>
     <?php } ?>
-    <div class="header">
-        <a href="/" class="text-decoration-none">
-            <img src="/images/logo.png" alt="C0MPU73R PR09R4M CHARITY" class="header-image redirect" />
-        </a>
-        <div class="header-text">C0MPU73R PR09R4M CHARITY</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex align-items-center">
+                <a href="/" class="text-decoration-none me-2">
+                    <img src="/images/logo.png" class="img-fluid h-100 w-auto logo" alt="C0MPU73R PR09R4M CHARITY" />
+                </a>
+                <h1 class="logo-title mt-4">C0MPU73R PR09R4M CHARITY</h1>
+            </div>
+        </div>
     </div>
     <hr />
     <div class="container">
