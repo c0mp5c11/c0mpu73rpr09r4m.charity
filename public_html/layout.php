@@ -42,24 +42,25 @@
         </div>
     </div>
     <hr />
-    <div class="container">
-        <main role="main" class="pb-3">
+    <main role="main" class="pb-3">
+        <div class="container">
             <?= $content ?? '' ?>
-        </main>
-    </div>
+        </div>
+    </main>
     <footer class="border-top footer text-muted">
         <div class="container">
-        <div class="row">
-            <div class="col"> &copy; <?= date('Y') ?> - C0MPU73R PR09R4M CHARITY</div>
-            <div class="col d-flex flex-column justify-content-end theme text-end"></div>
+            <div class="row">
+                <div class="col-6"> &copy; <?= date('Y') ?> - C0MPU73R PR09R4M CHARITY</div>
+                <div class="col-6 d-flex flex-column justify-content-end theme text-end"></div>
+            </div>
         </div>
     </footer>
-    <script type="text/javascript" src="~/jquery.min.js"></script>
-    <script type="text/javascript" src="~/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="~/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="~/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="~/jquery.validate.unobtrusive.min.js"></script>
-    <script type="text/javascript" src="~/site.js"></script>
+    <script type="text/javascript" src="/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="/lib/site.js"></script>
     <?= $scripts ?? '' ?>
 </body>
 </html>

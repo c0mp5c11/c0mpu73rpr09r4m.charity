@@ -10,9 +10,20 @@ ob_start();
 <div>
 <img class="mb-3" src="/images/feature_graphic.png">
 </div>
-<a class='btn btn-primary btn-lg m-1 redirect' href='/request/index.php'>Request</a>
-<a class='btn btn-primary btn-lg m-1 redirect' href='/software/index.php'>Software</a>
-<a class='btn btn-primary btn-lg m-1 redirect' href='/donate/index.php'>Donate</a>
+<ul>
+    <li>
+        <a class='btn btn-primary btn-lg m-1 redirect' href='/request/index.php'>Request</a>
+    </li>
+    <li>
+        <a class='btn btn-primary btn-lg m-1 redirect' href='/software/index.php'>Software</a>
+    </li>
+    <li>
+        <a class='btn btn-primary btn-lg m-1 redirect' href='/donate/index.php'>Donate</a>
+    </li>
+    <li>
+        <a class='btn btn-primary btn-lg m-1 redirect' href='mailto://email@c0mpu73rpr09r4m.charity'>Contact Us</a>
+    </li>
+</ul>
 <hr />
 <h2>Services</h2>
 <dl>
