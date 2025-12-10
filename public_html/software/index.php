@@ -13,34 +13,27 @@ The suggested price listed in the software description is an optional donation, 
     <button disabled class="accordion-button data-bs-toggle="collapse" data-bs-target="" 
         aria-expanded="false"
         aria-controls="">
+        Chinese Speech Trainer 2
     </button>
 </h2>
 <div class="accordion-collapse collapsed" data-bs-parent="#div-accordion">
     <div class="accordion-body">
-        <div>
-           <label class="form-label">Title</label>
-            <span class="font-weight-light"></span>
-        </div>
+        
         <div>
            <label class="form-label">Description</label>
-            <span class="font-weight-light"></span>
+            <span class="font-weight-light">Speak and listen to Mandarin Chinese language in this US English training word game.</span>
+        </div>
+        <div>
+           <label class="form-label">System</label>
+            <span class="font-weight-light">Android</span>
         </div>
         <div>
            <label class="form-label">Price</label>
-            <span class="font-weight-light"></span>
-        </div>
-        <div>
-           <label class="form-label">Platform</label>
-            <span class="font-weight-light"></span>
-        </div>
-        <div>
-            <img class="d-block h-100 w-100 d-none" src="data:image/jpg;base64, ">
+            <span class="font-weight-light">$1</span>
         </div>
         <div class="row">
             <div class="col-12 ">
-            <label class="form-label">Image</label>
-                <button disabled type='button' class='float-end btn btn-primary btn-lg m-1 redirect' data-url=''>Download</button>
-            </div>
+            <a type='button' class='float-end btn btn-primary btn-lg m-1' href='https://transfer.it/t/aAwyjF0lzTTR' download>Download</a>
         </div>
     </div>
 </div>

@@ -14,10 +14,19 @@
             <?= $_SERVER['SUCCESS_MESSAGE'] ?>
         </div>
     <?php } ?>
-    <?= (new DateTime() >= new DateTime('December 21') && new DateTime() <= new DateTime('March 20')) ? '<link rel="stylesheet" href="/css/season-winter.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('March 21') && new DateTime() <= new DateTime('June 21')) ? '<link rel="stylesheet" href="/css/season-spring.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('June 21') && new DateTime() <= new DateTime('September 22')) ? '<link rel="stylesheet" href="/css/season-summmer.css" />' : ''; ?>
-    <?= (new DateTime() >= new DateTime('September 22') && new DateTime() <= new DateTime('December 21')) ? '<link rel="stylesheet" href="/css/season-autumn.css" />' : ''; ?>
+    <?php
+        $today = new DateTime();
+        $monthDay = $today->format('m-d');
+    ?>
+    <?php if ($monthDay >= '12-21' || $monthDay <= '03-20'): ?>
+        <link rel="stylesheet" href="/css/season-winter.css" />
+    <?php elseif ($monthDay >= '03-21' && $monthDay <= '06-21'): ?>
+        <link rel="stylesheet" href="/css/season-spring.css" />
+    <?php elseif ($monthDay >= '06-22' && $monthDay <= '09-22'): ?>
+        <link rel="stylesheet" href="/css/season-summer.css" />
+    <?php elseif ($monthDay >= '09-23' && $monthDay <= '12-20'): ?>
+        <link rel="stylesheet" href="/css/season-autumn.css" />
+    <?php endif; ?>
 </head>
 <body>
     <?php if (!empty($_SERVER['SUCCESS_MESSAGE'])) { ?>
@@ -31,6 +40,27 @@
             <?= $_SERVER['ERROR_MESSAGE'] ?>
         </div>
     <?php } ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/test">Test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/software">Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto://email@c0mpu73rpr09r4m.charity">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/c0mp5c11">Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col d-flex align-items-center">
