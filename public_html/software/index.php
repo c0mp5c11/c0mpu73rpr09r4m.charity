@@ -33,7 +33,7 @@ The suggested price listed in the software description is an optional donation, 
         </div>
         <div class="row">
             <div class="col-12 ">
-            <a type='button' class='float-end btn btn-primary btn-lg m-1' href='https://transfer.it/t/aAwyjF0lzTTR' download>Download</a>
+            <a type='button' class='float-end btn btn-primary btn-lg m-1' href='https://drive.google.com/file/d/1q6Z6jpXv_bNzQ70gQSC4FXT3fGV4mrw8/view?usp=drive_link' download>Download</a>
         </div>
     </div>
 </div>

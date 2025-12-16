@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nonprofit Public Benefit Computer Program (Software Development, Computer Programming) Charity Corporation based in Rancho Cordova, Sacramento County, California, United States of America, owned by Daniel Ohm">
+    <meta name="description" content="Nonprofit Public Benefit Computer Program (Software Development, Computer Programming) Charity Corporation based in Rancho Cordova, Sacramento County, California, United States of America (USA), owned by Daniel Ohm">
     <meta name="robots" content="all">
+    <meta name="author" content="Daniel Ohm, C0MPU73R PR09R4M CHARITY">
     <title><?= $title ? $title . ' - ' : '' ?>c0mpu73rpr09r4m.charity</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/jquery-ui.min.css" />
@@ -40,38 +41,30 @@
             <?= $_SERVER['ERROR_MESSAGE'] ?>
         </div>
     <?php } ?>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/test">Test</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/software">Software</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto://email@c0mpu73rpr09r4m.charity">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/c0mp5c11">Github</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">C0MPU73R PR09R4M CHARITY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link <?php echo (strpos($_SERVER['REQUEST_URI'], '/test') === 0) ? 'active' : ''; ?>" href="/test">Test</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?php echo (strpos($_SERVER['REQUEST_URI'], '/software') === 0) ? 'active' : ''; ?>" href="/software">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:email@c0mpu73rpr09r4m.charity">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/c0mp5c11" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex align-items-center">
-                <a href="/" class="text-decoration-none me-2">
-                    <img src="/images/logo.png" class="img-fluid h-100 w-auto logo" alt="C0MPU73R PR09R4M CHARITY" />
-                </a>
-                <h1 class="logo-title mt-4">C0MPU73R PR09R4M CHARITY</h1>
-            </div>
-        </div>
-    </div>
-    <hr />
     <main role="main" class="pb-3">
         <div class="container">
             <?= $content ?? '' ?>

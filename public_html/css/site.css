@@ -133,3 +133,7 @@ form input, form textarea {
     min-height: 800px;
     height: 800px !important;
 }
+
+.bg-transparent {
+    background-color: transparent;
+}
